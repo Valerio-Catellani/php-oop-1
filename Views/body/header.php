@@ -1,3 +1,3 @@
 <header class="text-center">
-    <h1>titolo</h1>
+    <h1>Products</h1>
 </header>

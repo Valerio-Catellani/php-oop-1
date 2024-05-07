@@ -2,3 +2,33 @@
 body {
    font-family: "Oleo Script", system-ui;;
 }
+
+
+.my-card {
+   height: 550px;
+}
+
+.img-container {
+   width: 100%;
+   aspect-ratio: 2 / 1;
+}
+
+.card-text {
+   height:100px;
+}
+
+.black {
+   color: black;
+}
+
+.light-black {
+   color: #4a4949;
+}
+
+.bg-black {
+   background-color: black;
+}
+
+.bg-light-black {
+   background-color: #4a4949;
+}
