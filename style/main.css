@@ -13,8 +13,18 @@ body {
    aspect-ratio: 2 / 1;
 }
 
+.h-small {
+   height: 15%;
+}
+.h-high{
+   height: 85%;
+}
+
 .card-text {
    height:100px;
+}
+.card-book-text{
+   height: 150px;
 }
 
 .black {
