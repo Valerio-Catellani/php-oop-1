@@ -1,19 +1,6 @@
  <?php
     include_once __DIR__ . "/../../Controllers/dbrequest.php";
     $movies = getAllMovies();
-    function getStars($value)
-    {
-        $fullTemplate = '';
-        for ($i = 0; $i < 10; $i++) {
-            if ($i < $value) {
-                $fullTemplate .= '<i class="fa-solid fa-star text-warning"></i>';
-            } else {
-                $fullTemplate .= '<i class="fa-regular fa-star"></i>';
-            }
-        }
-        return $fullTemplate;
-    }
-    $title = getAllMovies();
     ?>
 
  <div class='container my-2'>
@@ -34,10 +21,7 @@
                              <div class="card-body">
                                  <p class="card-text bg-dark-subtle p-1 overflow-y-auto text-dark rounded-1"><?= $movie->description ?></p>
                                  <p class="fw-bold mb-0 border-black border-bottom">Vote Avarage:
-                                     <?php
-                                        $stars = intval($movie->voteAverage);
-                                        echo getStars($stars);
-                                        ?>
+                                     <?= $movie->getStars(); ?>
                                  </p>
                                  <div class="d-flex align-items-center">
                                      <p class="mb-0 fw-bold">

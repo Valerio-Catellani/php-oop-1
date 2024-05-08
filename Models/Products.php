@@ -11,11 +11,11 @@ class Products
 
     public function __construct(array $data)
     {
-        $this->image = $data['image'] ?? '';
-        $this->genere = $data['genere'];
-        $this->id = $data['id'];
-        $this->description = $data['description'];
-        $this->title = $data['title'];
+        $this->image = $data['image'];
+        $this->genere = $data['genere'] ?? null;
+        $this->id = $data['id'] ?? null;
+        $this->description = $data['description'] ?? null;
+        $this->title = $data['title'] ?? null;
     }
 
     public function play()

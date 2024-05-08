@@ -31,4 +31,17 @@ class Movie extends Products
         ];
         parent::__construct($commonArray);
     }
+
+    public function getStars()
+    {
+        $fullTemplate = '';
+        for ($i = 0; $i < 10; $i++) {
+            if ($i < intval($this->voteAverage)) {
+                $fullTemplate .= '<i class="fa-solid fa-star text-warning"></i>';
+            } else {
+                $fullTemplate .= '<i class="fa-regular fa-star"></i>';
+            }
+        }
+        return $fullTemplate;
+    }
 }
